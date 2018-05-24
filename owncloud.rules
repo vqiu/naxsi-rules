@@ -1,0 +1,15 @@
+# Defaults
+BasicRule  wl:15 "mz:$URL:/index.php/heartbeat|BODY";
+BasicRule  wl:11,15,1001,1013,1310,1311 "mz:BODY";
+BasicRule  wl:1001,1009,1013,1310,1311,1315 "mz:$BODY_VAR:files";
+BasicRule  wl:1009,1013,1315 "mz:$URL_X:/index.php/apps|ARGS";
+BasicRule  wl:1000,1001,1013,1311 "mz:URL";
+BasicRule  wl:15,1000,1001,1009,1310,1311,1315 "mz:$URL_X:/index.php/apps|URL";
+BasicRule  wl:15,1000,1001,1009,1010,1011,1015,1016,1100,1101,1310,1311,1315 "mz:$URL_X:/index.php/apps|BODY";
+BasicRule  wl:15,1000,1001,1310,1311 "mz:BODY|NAME";
+BasicRule  wl:11,1402 "mz:$URL_X:/remote.php/webdav|BODY";
+BasicRule  wl:1402 "mz:$URL_X:/|HEADERS";
+BasicRule  wl:1010,1011 "mz:$URL_X:/index.php/core/preview.png|ARGS";
+
+# LDAP
+BasicRule wl:1005,1009,1010,1011,1015,1401 "mz:$URL:/index.php/apps/user_ldap/ajax/testConfiguration.php|BODY";
