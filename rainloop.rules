@@ -1,0 +1,16 @@
+BasicRule wl:1000 "mz:$BODY_VAR:folders[]";
+BasicRule wl:1015 "mz:$URL:/|$BODY_VAR:flagsuids";
+BasicRule wl:1000,1310,1311 "mz:$URL:/|BODY|NAME";
+BasicRule wl:1000,1310,1311 "mz:$URL:/|ARGS|NAME";
+BasicRule wl:1001,1302,1303 "mz:$URL:/|$BODY_VAR:from";
+BasicRule wl:1001,1200,1302,1303 "mz:$URL:/|$BODY_VAR:text";
+BasicRule wl:1008 "mz:$URL:/|$BODY_VAR:text";
+BasicRule wl:1000,1001,1002,1007,1008,1009,1010,1011,1013,1015,1100,1302,1303,1311,1312 "mz:BODY";
+BasicRule wl:1000,1001,1008,1015,1302,1303 "mz:$URL:/|BODY";
+BasicRule wl:1015 "mz:$BODY_VAR:flagsuids";
+BasicRule wl:1001,1302,1303 "mz:$BODY_VAR:from";
+BasicRule wl:1008 "mz:$BODY_VAR:text";
+BasicRule wl:1007,1200 "mz:$URL:/|ARGS";
+BasicRule wl:1000,1002,1007,1200 "mz:ARGS";
+BasicRule wl:1200 "mz:$HEADERS_VAR:cookie";
+BasicRule wl:1200 "mz:$BODY_VAR:attachments[]";
